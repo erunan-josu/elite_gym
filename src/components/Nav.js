@@ -31,8 +31,6 @@ const StyledHeader = styled.header`
   align-items: center;
   padding: 1rem 10rem;
   background: #fff;
-  /* background: rgba(27, 27, 27, 0.7); */
-  /* color: #fff; */
   color: #333;
   position: sticky;
   top: 0;
@@ -44,11 +42,14 @@ const StyledHeader = styled.header`
     list-style: none;
   }
   li {
-    padding-left: 10rem;
+    padding-left: 8rem;
   }
   a {
+    cursor: pointer;
     /* color: #fff; */
     color: #333;
+    padding: 1rem;
+    padding-right: 0rem;
     text-decoration: none;
   }
 `
