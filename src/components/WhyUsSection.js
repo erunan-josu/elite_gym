@@ -8,14 +8,17 @@ import {
   faUsers,
 } from '@fortawesome/free-solid-svg-icons'
 
+// Components
+import TitleSection from './TitleSection'
 import Gallery from './Gallery'
 
 const WhyUsSection = () => {
   return (
     <StyledWhy>
-      <h2>Why Choose Us</h2>
-      <h3>A choice that makes the difference</h3>
-      <div className="line"></div>
+      <TitleSection
+        title="Why Choose Us"
+        subtitle="A choice that makes the difference"
+      />
       <Cards>
         <Card>
           <div className="icon">
@@ -72,21 +75,12 @@ const StyledWhy = styled.div`
     padding: 2rem 0rem;
     display: flex;
   }
-  h2 {
-    padding-top: 4rem;
-    padding-bottom: 1rem;
-  }
   h3 {
     color: #999;
     padding: 1rem 0.5rem 1rem 0.5rem;
   }
   h4 {
     padding-bottom: 2rem;
-  }
-  .line {
-    height: 0.3rem;
-    background: #333;
-    margin-bottom: 4rem;
   }
   svg {
     font-size: 3rem;

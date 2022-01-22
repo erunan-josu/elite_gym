@@ -2,9 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
-const Nav = () => {
+const Nav = ({ y }) => {
   return (
-    <StyledHeader>
+    <StyledHeader style={!y ? { position: 'sticky' } : { position: 'inherit' }}>
       <StyledLogo>ELITE</StyledLogo>
       <ul>
         <li>
@@ -15,9 +15,6 @@ const Nav = () => {
         </li>
         <li>
           <Link to="/classes">Classes</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact Us</Link>
         </li>
       </ul>
     </StyledHeader>
@@ -34,6 +31,7 @@ const StyledHeader = styled.header`
   color: #333;
   position: sticky;
   top: 0;
+  z-index: 12;
   h1 {
     color: #dfbc25;
   }
@@ -46,7 +44,6 @@ const StyledHeader = styled.header`
   }
   a {
     cursor: pointer;
-    /* color: #fff; */
     color: #333;
     padding: 1rem;
     padding-right: 0rem;

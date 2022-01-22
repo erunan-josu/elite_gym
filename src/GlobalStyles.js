@@ -6,14 +6,15 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     box-sizing: border-box;
 }
-/* html {
+html {
     @media (max-width: 1700px) {
         font-size: 75%;
     }
 
-} */
+}
 body {
-    font-family: 'Inter', sans-serif;;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
 }
 
 h2{
@@ -27,7 +28,12 @@ li{
     font-weight: bold;
 }
 a {
+    text-decoration: none;
     font-size: 1.1rem;
+}
+button {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
 }
 `
 

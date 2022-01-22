@@ -1,18 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
-
 // Components
 import Opacity from './Opacity'
-// Images
-import Welcome from '../img/Welcome.jpg'
 
-const Hero = () => {
+const Hero = ({ text1, text2, special, bg }) => {
   return (
-    <StyledHero>
+    <StyledHero style={{ backgroundImage: `url(${bg})` }}>
       <TitleContainer>
-        <h2>Train as a Pro </h2>
-        <h2 className="title">
-          become <span>ELITE</span>
+        <h2 className="title">{text1} </h2>
+        <h2 className="subtitle">
+          {text2} <span>{special}</span>
         </h2>
       </TitleContainer>
       <Opacity />
@@ -21,7 +18,6 @@ const Hero = () => {
 }
 
 const StyledHero = styled.div`
-  background-image: url(${Welcome});
   min-height: 80vh;
   object-fit: cover;
   position: relative;

@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Opacity = () => {
-  return <DarkOpacity></DarkOpacity>
+  return <DarkOpacity id="opacity-border"></DarkOpacity>
 }
 
 const DarkOpacity = styled.div`
