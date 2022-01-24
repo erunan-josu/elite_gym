@@ -7,14 +7,24 @@ import {
   faDumbbell,
   faUsers,
 } from '@fortawesome/free-solid-svg-icons'
+import { motion } from 'framer-motion'
 
 // Components
 import TitleSection from './TitleSection'
 import Gallery from './Gallery'
+import { fade } from '../Animations'
+import useScroll from './useScroll'
 
 const WhyUsSection = () => {
+  const [element, controls] = useScroll()
+
   return (
-    <StyledWhy>
+    <StyledWhy
+      variants={fade}
+      animate={controls}
+      initial="hidden"
+      ref={element}
+    >
       <TitleSection
         title="Why Choose Us"
         subtitle="A choice that makes the difference"
@@ -66,7 +76,7 @@ const WhyUsSection = () => {
   )
 }
 
-const StyledWhy = styled.div`
+const StyledWhy = styled(motion.div)`
   padding: 5rem 7rem;
   min-height: 90vh;
   height: auto;

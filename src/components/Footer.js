@@ -10,15 +10,15 @@ library.add(fab)
 const ContactSection = () => {
   return (
     <StyledSection>
-      <StyledContact>
+      <StyledContact className="contact">
         <FontAwesomeIcon className="icon" icon={faEnvelope} />
         <p>elitegym@elite.com</p>
       </StyledContact>
-      <StyledContact>
+      <StyledContact className="contact">
         <FontAwesomeIcon className="icon" icon={faMobileAlt} />
         <p>665 333 333</p>
       </StyledContact>
-      <StyledContact>
+      <StyledContact className="contact">
         <FontAwesomeIcon className="icon" icon={faInstagram} />
         <p>@eliteGym</p>
       </StyledContact>
@@ -30,15 +30,21 @@ const StyledSection = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 3rem 7rem;
+  padding: 1rem 7rem;
   min-height: 10vh;
   background-color: #333;
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: #fff;
   svg {
     margin-right: 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #dfbc25;
+  }
+  @media (max-width: 590px) {
+    flex-direction: column;
+    .contact {
+      padding: 1.5rem;
+    }
   }
 `
 

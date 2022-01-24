@@ -20,6 +20,7 @@ const StyledClass = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
+  max-width: 1400px;
   min-height: 60vh;
   border-radius: 3px;
   font-family: 'Ultra', serif;

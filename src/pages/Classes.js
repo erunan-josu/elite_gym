@@ -1,18 +1,22 @@
 import React from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 // Components
 import { ClassesList } from '../data'
-import Nav from '../components/Nav'
 import ClassTitle from '../components/ClassTitle'
-import Footer from '../components/Footer'
+import { pageAnimation } from '../Animations'
 
 const Classes = () => {
   const classesData = ClassesList()
   return (
     <div>
-      <Nav />
-      <ClassesContainer>
+      <ClassesContainer
+        variants={pageAnimation}
+        initial="hidden"
+        animate="show"
+        exit="exit"
+      >
         {classesData.map((elem) => {
           const { id, name, url, mainImg } = elem
           return (
@@ -22,20 +26,20 @@ const Classes = () => {
           )
         })}
       </ClassesContainer>
-      <Footer />
     </div>
   )
 }
 
-const ClassesContainer = styled.div`
+const ClassesContainer = styled(motion.div)`
   min-height: 100vh;
-  background: #dedede;
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   flex-direction: column;
   a {
+    display: flex;
+    justify-content: center;
     padding: 2rem;
     width: 100%;
   }

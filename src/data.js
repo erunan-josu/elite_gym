@@ -45,9 +45,13 @@ export const ClassesList = () => {
   return [
     {
       id: uuidv4(),
-      name: 'Crossfit',
+      name: 'CrossFit',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dignissimos natus nesciunt qui quae nobis cum molestiae cumque mollitia autem?',
+        'A form of high intensity interval training, CrossFit is a strength and conditioning workout that is made up of functional movement performed at a high intensity level.',
+      objective:
+        'Optimizing the trainee’s physical competence in each of ten recognized fitness domains: Cardiovascular and Respiratory Endurance, Stamina, Strength, Flexibility, Power, Speed, Coordination, Agility, Balance and Accuracy. ',
+      duration: 45,
+      intensity: 'High',
       url: '/classes/crossfit',
       mainImg: crossMain,
     },
@@ -55,7 +59,11 @@ export const ClassesList = () => {
       id: uuidv4(),
       name: 'Strongman',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dignissimos natus nesciunt qui quae nobis cum molestiae cumque mollitia autem?',
+        'Strongman competitors lift odd objects and extremely heavy weight,but the majority of events are founded on the basics: squat,deadlift, and press.',
+      objective:
+        'It is thought to be an ideal foundation to branch off into other strength and muscle-focused activities.',
+      duration: 45,
+      intensity: 'High',
       url: '/classes/strongman',
       mainImg: strongMain,
     },
@@ -63,7 +71,11 @@ export const ClassesList = () => {
       id: uuidv4(),
       name: 'Gymnastics',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dignissimos natus nesciunt qui quae nobis cum molestiae cumque mollitia autem?',
+        'Gymnastics is a sport that includes physical exercises requiring balance, strength, flexibility, agility, coordination,dedication and endurance.',
+      objective:
+        'Promoting balance and co-ordination. Developing strength, improving flexibility. Improving body posture.',
+      duration: 45,
+      intensity: 'High',
       url: '/classes/gymnastic',
       mainImg: gymnasticMain,
     },
@@ -71,7 +83,11 @@ export const ClassesList = () => {
       id: uuidv4(),
       name: 'Weightlifting',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dignissimos natus nesciunt qui quae nobis cum molestiae cumque mollitia autem?',
+        'Weightlifting is an athletic discipline which requires lifting of heavy weights in a progressive manner.',
+      objective:
+        'Weight training provides a stress to the muscles that causes them to adapt and get stronger.',
+      duration: 45,
+      intensity: 'High',
       url: '/classes/weightlifting',
       mainImg: wlMain,
     },

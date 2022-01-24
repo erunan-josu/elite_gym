@@ -13,6 +13,7 @@ html {
 
 }
 body {
+    color: #333;
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
 }

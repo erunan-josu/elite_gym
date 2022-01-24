@@ -1,29 +1,40 @@
 import React from 'react'
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
+// Components
 import TitleSection from './TitleSection'
+import useScroll from './useScroll'
+import { faqReveal } from '../Animations'
 
 const FaqSection = () => {
+  const [element, controls] = useScroll()
+
   return (
-    <StyledFaq>
+    <StyledFaq
+      variants={faqReveal}
+      initial="hidden"
+      animate={controls}
+      ref={element}
+    >
       <TitleSection title="FAQ" />
       <div className="question-container">
-        <h4 className="question">Can I take </h4>
+        <h4 className="question">Is it possible to pay once a year?</h4>
         <div className="answer">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam!
+          Yes, It is and in that case you will get 1 month of membership free.
         </div>
       </div>
       <div className="faq-line"></div>
       <div className="question-container">
-        <h4 className="question">Lorem, ipsum dolor.</h4>
+        <h4 className="question">Is there any permanence clause?</h4>
         <div className="answer">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam!
+          No, you can quit and restart whenever you decide.
         </div>
       </div>
       <div className="faq-line"></div>
       <div className="question-container">
-        <h4 className="question">Lorem, ipsum dolor.</h4>
+        <h4 className="question">Do I have to pay enrolment fee? </h4>
         <div className="answer">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam!
+          Not really. If you pay once a year, there is NOT enrolment fee.
         </div>
       </div>
       <div className="faq-line"></div>
@@ -31,8 +42,8 @@ const FaqSection = () => {
   )
 }
 
-const StyledFaq = styled.div`
-  min-height: 90vh;
+const StyledFaq = styled(motion.div)`
+  min-height: 80vh;
   background: #dedede;
   padding: 5rem 7rem;
   h4 {
