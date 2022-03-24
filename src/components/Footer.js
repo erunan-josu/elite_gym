@@ -53,6 +53,12 @@ const StyledContact = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  a {
+    transition: all 300ms ease-in-out;
+  }
+  a:hover {
+    color: #dfbc25;
+  }
 `
 
 export default ContactSection

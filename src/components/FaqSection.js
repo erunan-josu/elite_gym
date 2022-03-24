@@ -51,7 +51,6 @@ const StyledFaq = styled(motion.div)`
   }
 
   .question-container {
-    cursor: pointer;
     padding: 1rem 2rem 2rem 2rem;
   }
   .faq-line {
