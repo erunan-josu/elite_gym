@@ -34,7 +34,7 @@ const FaqSection = () => {
       <div className="question-container">
         <h4 className="question">Do I have to pay enrolment fee? </h4>
         <div className="answer">
-          Not really. If you pay once a year, there is NOT enrolment fee.
+          Paying once a year there is NO enrolment fee.
         </div>
       </div>
       <div className="faq-line"></div>

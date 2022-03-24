@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab } from '@fortawesome/free-brands-svg-icons'
+import { fab, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope, faMobileAlt } from '@fortawesome/free-solid-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 library.add(fab)
@@ -11,16 +11,19 @@ const ContactSection = () => {
   return (
     <StyledSection>
       <StyledContact className="contact">
-        <FontAwesomeIcon className="icon" icon={faEnvelope} />
-        <p>elitegym@elite.com</p>
+        <FontAwesomeIcon className="icon" icon={faLinkedin} />
+        <a
+          href="https://www.linkedin.com/in/josu-hern%C3%A1ndez-preciado-76966a205/"
+          target="blank"
+        >
+          LinkedIn
+        </a>
       </StyledContact>
       <StyledContact className="contact">
-        <FontAwesomeIcon className="icon" icon={faMobileAlt} />
-        <p>665 333 333</p>
-      </StyledContact>
-      <StyledContact className="contact">
-        <FontAwesomeIcon className="icon" icon={faInstagram} />
-        <p>@eliteGym</p>
+        <FontAwesomeIcon className="icon" icon={faGithub} />
+        <a href="https://github.com/erunan-josu" target="blank">
+          Github
+        </a>
       </StyledContact>
     </StyledSection>
   )

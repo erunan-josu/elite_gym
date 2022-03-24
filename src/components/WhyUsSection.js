@@ -35,10 +35,7 @@ const WhyUsSection = () => {
             <FontAwesomeIcon icon={faBuilding} />
             <h4>Installations</h4>
           </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-            laboriosam expedita quasi fugit ullam optio!
-          </p>
+          <p>The biggest place to train in Vitoria-Gasteiz.</p>
         </Card>
         <Card>
           <div className="icon">
@@ -46,8 +43,8 @@ const WhyUsSection = () => {
             <h4>Equipment</h4>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-            laboriosam expedita quasi fugit ullam optio!
+            Train as a PRO with the best material provided by the biggest
+            brands.
           </p>
         </Card>
         <Card>
@@ -56,8 +53,8 @@ const WhyUsSection = () => {
             <h4>Staff</h4>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-            laboriosam expedita quasi fugit ullam optio!
+            Personal trainers specialized in different areas to provide you the
+            best results.
           </p>
         </Card>
         <Card>
@@ -66,8 +63,8 @@ const WhyUsSection = () => {
             <h4>Affordable</h4>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-            laboriosam expedita quasi fugit ullam optio!
+            Adjust your plan to your wallet. Different plans for every kind of
+            trainers.
           </p>
         </Card>
       </Cards>

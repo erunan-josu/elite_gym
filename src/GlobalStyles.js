@@ -29,6 +29,7 @@ li{
     font-weight: bold;
 }
 a {
+    color: inherit;
     text-decoration: none;
     font-size: 1.1rem;
 }
