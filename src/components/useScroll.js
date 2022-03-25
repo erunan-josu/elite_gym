@@ -7,7 +7,6 @@ const useScroll = () => {
 
   if (view) {
     controls.start('show')
-    console.log(view)
   } else {
     controls.start('hidden')
   }
